@@ -92,8 +92,8 @@ See [changelog.txt](changelog.txt) for the full release history.
 
 ## Credits
 
-- Original author: [Kyle Van Deusen](https://profiles.wordpress.org/skvandeusen/)
-- Maintainer: [Taylor Drayson](https://profiles.wordpress.org/tdrayson/)
+- Author: [Kyle Van Deusen](https://profiles.wordpress.org/skvandeusen/)
+- Contributor: [Taylor Drayson](https://profiles.wordpress.org/tdrayson/)
 
 ## License
 
