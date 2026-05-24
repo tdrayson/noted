@@ -2,8 +2,9 @@
  * Noted! — Block-level notes.
  *
  * Adds `notedNote` (string) and `notedNoteUser` (string, last editor's
- * user_login) attributes to every block. Notes are inline — they travel
- * with the block when copy/pasted or saved.
+ * user_login) attributes to every block via the filter below. Server-
+ * registered blocks need the same attrs in PHP too — see BlockNotes.php.
+ * Notes are inline — they travel with the block when copy/pasted or saved.
  *
  * Surfaces:
  *   - Toolbar dropdown popover (mirrors the Link UI)

@@ -39,6 +39,9 @@ $strip_noted_note = static function (array $block) use (&$strip_noted_note): arr
     if (isset($block['attrs']['notedNote'])) {
         unset($block['attrs']['notedNote']);
     }
+    if (isset($block['attrs']['notedNoteUser'])) {
+        unset($block['attrs']['notedNoteUser']);
+    }
     if (! empty($block['innerBlocks'])) {
         $block['innerBlocks'] = array_map($strip_noted_note, $block['innerBlocks']);
     }
