@@ -59,6 +59,7 @@ final class Plugin
         (new AdminBar($this->settings))->register();
         (new PageNotes($this->settings))->register();
         (new DashboardWidget($this->settings))->register();
+        (new BlockNotes())->register();
         (new Assets($this, $this->settings))->register();
     }
 
