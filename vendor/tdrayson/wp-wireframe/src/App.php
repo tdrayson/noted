@@ -264,6 +264,9 @@ final class App
             }
 
             $relative = substr($packageDir, strlen($realDir));
+            // realpath() uses backslashes on Windows; esc_url() strips them from
+            // script/style URLs, which collapses path segments into one bogus folder.
+            $relative = str_replace('\\', '/', $relative);
 
             return trailingslashit($urlBase) . $relative . 'src/assets/';
         }
