@@ -5,13 +5,11 @@ declare(strict_types=1);
 namespace Noted;
 
 /**
- * Server-side registration of block-level note attributes.
+ * Fix: declare block note attributes for server-registered blocks.
  *
- * Injecting attributes only via the `blocks.registerBlockType` JS filter is
- * not enough for dynamic blocks (and others with strict REST validation):
- * WordPress rejects unknown attributes when rendering or saving. Registering
- * here propagates the schema to the editor with higher priority than
- * client-only patches.
+ * Block notes are normally attached in JS (blocks.registerBlockType in
+ * block-notes.js). Dynamic / server-rendered blocks also require the same
+ * attributes in PHP or REST and ServerSideRender reject unknown attrs.
  */
 final class BlockNotes
 {
@@ -27,7 +25,7 @@ final class BlockNotes
     }
 
     /**
-     * Add notedNote + notedNoteUser to every block type registered on the server.
+     * Add notedNote + notedNoteUser to each block type registered in PHP.
      *
      * @param array<string, mixed> $args       Block type registration arguments.
      * @param string               $block_type Block name (e.g. core/paragraph).
