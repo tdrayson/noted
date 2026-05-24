@@ -1,5 +1,10 @@
 == Changelog ==
 
+= 2.0.1 =
+* Fixed: Block notes on server-rendered (dynamic) blocks no longer fail attribute validation.
+* Fixed: Noted panel uses full width on narrow viewports (still capped at 400px).
+* Fixed: Settings page wireframe assets load correctly on Windows when the package path contains backslashes.
+
 = 2.0 =
 * New: Page-level notes — attach notes to any post or page from the block editor sidebar or the classic editor.
 * New: Block-level notes — leave a note on any individual block in the editor. Notes travel with the block when copied or pasted.

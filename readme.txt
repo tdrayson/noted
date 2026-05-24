@@ -3,7 +3,7 @@ Contributors: skvandeusen, tdrayson
 Tags: notes, admin, productivity, markdown, dashboard
 Requires at least: 5.3
 Tested up to: 6.9
-Stable tag: 2.0
+Stable tag: 2.0.1
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -68,6 +68,11 @@ Please open an issue on GitHub - [https://github.com/tdrayson/noted/issues](http
 
 == Changelog ==
 
+= 2.0.1 =
+* Fixed: Block notes on server-rendered (dynamic) blocks no longer fail attribute validation.
+* Fixed: Noted panel uses full width on narrow viewports (still capped at 400px).
+* Fixed: Settings page wireframe assets load correctly on Windows when the package path contains backslashes.
+
 = 2.0 =
 * New: Page-level notes — attach notes to any post or page from the block editor sidebar or the classic editor.
 * New: Block-level notes — leave a note on any individual block in the editor. Notes travel with the block when copied or pasted.
@@ -89,6 +94,9 @@ Please open an issue on GitHub - [https://github.com/tdrayson/noted/issues](http
 * Initial release of the Noted! plugin.
 
 == Upgrade Notice ==
+
+= 2.0.1 =
+Bugfix release: block notes on dynamic blocks, panel width on small screens, and Windows settings asset paths.
 
 = 2.0 =
 Major update adding page-level notes, block-level notes, pinning, dashboard widget, settings page, and role-based access.

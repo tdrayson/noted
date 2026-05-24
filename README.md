@@ -70,6 +70,12 @@ Please use the [GitHub issue tracker](../../issues) to report bugs or request fe
 
 See [changelog.txt](changelog.txt) for the full release history.
 
+### 2.0.1
+
+- Fix block notes on server-rendered (dynamic) blocks.
+- Fix panel width on narrow viewports.
+- Fix settings wireframe assets on Windows paths.
+
 ### 2.0
 
 - Page-level notes via the block editor sidebar or classic editor.
